@@ -1,0 +1,95 @@
+#root {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+  width: 100vw;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.clickButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.clickButton {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #0ac500;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resetDiv {
+  padding: 2em;
+  border: 5px solid #ff0000;
+  border-radius: 1em;
+}
+
+.resetButton {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nameFormContainer {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  max-height: 200px;
+  width: 300px;
+}
+
+.leaderboardContainer {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  max-height: 600px;
+  width: 300px;
+  overflow-y: auto;
+}
